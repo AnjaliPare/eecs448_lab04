@@ -1,0 +1,29 @@
+<html>
+    <head>
+    </head>
+<body>
+<?php
+  $cols = 100;
+  $rows = 100;
+  echo "<table style = \"width:10%\">";
+    echo "<tr>";
+    echo "<td>  </td>";
+    for ($r =1; $r<=$cols; $r++)
+    {
+          echo ("<td>" .$r ."</td>");
+    }
+    echo "</tr>";
+    for ($r =1; $r<=$rows; $r++)
+    {
+      echo "<tr>";
+      echo ("<td>" .$r ."</td>");
+        for($c =1; $c<=$cols;$c++)
+        {
+          echo ("<td>" .$c*$r . "</td>");
+        }
+      echo "</tr>";
+    }
+?>
+
+</body>
+</html>
