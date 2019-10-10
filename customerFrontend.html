@@ -12,7 +12,7 @@
           <p>
             Please enter your username and password. Then select the shipping method
           </p>
-           <form action="customerBackend.php" onsubmit="return validate()" method="post">
+           <form action="customerBackend.php" onsubmit="return validate()" method="post" id "form1">
               Username:<input type = "text" name ="username" id = "uname">
               <br><br>
               Password:<input type = "text" name = "password" id = "pass"><br><br>
@@ -24,9 +24,12 @@
               Chocolate Cheese Cake ($7):<input type = "number" name = "ccc" id = "ccc">
               <br><br>
               <p>Pick your shipping method:<p>
-              <input type="radio" name="ship" value="Free">7 day shipping(free!)<br><br>
-              <input type="radio" name="ship" value="Overnight">Overnight shipping ($50.00)<br><br>
-              <input type="radio" name="ship" value="3-day">3 day shipping ($5.00)<br><br>
+              <input type="radio" name="ship" id = "Free" value="Free">7 day shipping(free!)<br><br>
+              <input type="radio" name="ship" id = "Overnight" value="Overnight">Overnight shipping ($50.00)<br><br>
+              <input type="radio" name="ship" id = " 3-day" value="3-day">3 day shipping ($5.00)<br><br>
+              <input type="submit" value="Submit">
+              <button type = "button" form = "form1" onclick = "reset()">Reset</button>
            </form>
+           <script type="text/javascript" src="formChecker.js"></script>
         </body>
 </html>
